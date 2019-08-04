@@ -1,0 +1,42 @@
+.main{
+    background-image:url("/home/wecode/Documents/pizzaproject/image/back.jpg");
+    width: 50%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    width: 80%;
+    display: block;
+    margin-bottom: 20px;
+    height: 30%;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+   font-style: oblique;
+    background-color: #f1f1f1;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+background-image: 
+  }
+  #cardss{
+      display: flex;
+      flex-direction: row;
+      width:50%;
+      
+  }
+  body>.card{
+      width:90%;
+  }
+  /* .block{
+      text-align: center;
+  } */
