@@ -119,7 +119,7 @@ $(document).ready(function () {
         //     console.log(inputtedpizzadelivery)
         // }
 
-        var newOrder = new Order(entersizeofpizza, entercrustofpizza, entertoppingofpizza, enterpriceofpizza,enterpriceofquantity);
+        var newOrder = new Order(entersizeofpizza, entercrustofpizza, entertoppingofpizza, enterpriceofpizza,enterpriceofquantity)  ;
         console.log(newOrder)
 
         $('ul#orderone').append("<li><span>" + newOrder.allInformation() + "</span></li>");
