@@ -6,6 +6,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
     <title>PIZZA PALACE</title>
 </head>
 
@@ -87,22 +88,22 @@
                 </div>
             </div>
         </div>
-        <form>
+        <div id=project>
+            <form>
+                <div class="container">
+                    <div class=colomn>
 
-            <div class="container">
-                <div class=colomn>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">SIZE</label>
+                            <select class="form-control" id="os" style="width:20%;">
+                                <option> </option>
+                                <option>Large 800$</option>
+                                <option> Medium 600$</option>
+                                <option>Small 500$</option>
 
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">SIZE</label>
-                        <select class="form-control" id="exampleFormControlSelect1" style="width:20%;">
-                            <option> </option>
-                            <option id="os">Large 800$</option>
-                            <option id="us"> Medium 600$</option>
-                            <option id="ss">Small 500$</option>
-
-                        </select>
-                    </div>
-                    <!-- <div class="form-group">
+                            </select>
+                        </div>
+                        <!-- <div class="form-group">
                         <label for="exampleFormControlSelect2">PRICE</label>
                         <select class="form-control" id="exampleFormControlSelect2" style="width:20%;">
                             <option> </option>
@@ -111,47 +112,49 @@
                             <option id="ce">400$</option>
 
                         </select> -->
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">crust</label>
-                        <select class="form-control" id="exampleFormControlSelect1" style="width:20%;">
-                            <option> </option>
-                            <option id="cr">crispy</option>
-                            <option id="st"> stuffed</option>
-                            <option id="tr">gluten-free</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">TOPPING</label>
-                        <select class="form-control" id="exampleFormControlSelect1" style="width:20%;">
-                            <option> </option>
-                            <option id="pi">onions</option>
-                            <option id="p1"> mashroom</option>
-                            <option id="p2">cheken</option>
-                            <option id="p3">Pineapple</option>
-                        </select>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">crust</label>
+                            <select class="form-control" id="cr" style="width:20%;">
+                                <option> </option>
+                                <option>crispy</option>
+                                <option> stuffed</option>
+                                <option>gluten-free</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">TOPPING</label>
+                            <select class="form-control" id="pi" style="width:20%;">
+                                <option> </option>
+                                <option></option>onions</option>
+                                <option> mashroom</option>
+                                <option>cheken</option>
+                                <option>Pineapple</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="qty"class="number">quantity</label>
+                            <input type="text" id="adr" name="quantity" placeholder="">
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">quantity </label>
-                        <textarea class="form-control" id="pop" rows="3" style="width:20%;"></textarea>
-                    </div>
                 </div>
 
-            </div>
+                <div class="pizza palace">
+                    <div id="receivedpizza">
 
-            <div class="pizza palace">
-                <div id="received*pizza*">
-                    <p>size of pizza:<em class="size of pizza"></em></p>
-                    <p>crust of pizza:<em class="crust of pizza"></em></p>
-                    <p>toppping of pizza:<em class="topping of pizza"></em></p>
-                    <p>price of pizza:<em class="price of pizza"></em></p>
-                    <p>quantity of pizza:<em class="quantity of pizza"></em></p>
+                        <p>size of pizza:<em class="size of pizza"></em></p>
+                        <p>crust of pizza:<em class="crust of pizza"></em></p>
+                        <p>toppping of pizza:<em class="topping of pizza"></em></p>
+                        <p>price of pizza:<em class="price of pizza"></em></p>
+                        <p>quantity of pizza:<em class="quantity of pizza"></em></p>
+                    </div>
                 </div>
-            </div>
-            <button id="sand"><span>Checkout</span></button>
-    </div>
+                <button type="submit" id="sand">Checkout</button>
+        </div>
     </div>
     </form>
+    </div>
     <ul id="done">
         <li></li>
     </ul>
