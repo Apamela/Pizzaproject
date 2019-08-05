@@ -113,7 +113,7 @@
 
                         </select> -->
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1">crust</label>
+                            <label>crust</label>
                             <select class="form-control" id="cr" style="width:40%;">
                                 <option> </option>
                                 <option>crispy</option>
@@ -122,10 +122,10 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1">TOPPING</label>
+                            <label>TOPPING</label>
                             <select class="form-control" id="pi" style="width:40%;">
                                 <option> </option>
-                                <option></option>onions</option>
+                                <option>onions</option>
                                 <option> mashroom</option>
                                 <option>cheken</option>
                                 <option>Pineapple</option>
@@ -133,13 +133,19 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="qty" class="number">quantity</label>
+                            <label>quantity</label>
                             <input type="text" id="adr" name="quantity" placeholder="">
                         </div>
                     </div>
-                    <div id="action">
-                        <input type="radio" name="enter" value="you can delively "> yes<br>
-                        <input type="radio" name="enter" value="i will come for it"> No<br>
+                    <div class="form-group">
+                        <label>Delivery</label>
+                        <select class="form-control" id="op" style="width:40%;">
+                            <option value="30$">yes</option>
+                            <option value="0">No</option>
+
+
+
+                        </select>
                     </div>
                 </div>
 
@@ -157,12 +163,13 @@
         </div>
     </div>
     </form>
-    </div>
+
     <ul id="done">
         <li></li>
     </ul>
-    </div>
+    <div id="solution">
 
+    </div>
 </body>
 
 </html>

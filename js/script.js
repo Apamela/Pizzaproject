@@ -12,7 +12,7 @@ Order.prototype.allInformation = function () {
 
 $(document).ready(function () {
 
-    $('#project form').submit(function () {
+    $('#project form').submit(function (event) {
 
         var mop = $('#os').val()
         alert(mop);
@@ -22,11 +22,16 @@ $(document).ready(function () {
         alert(lol);
         var sos = $('#adr').val()
         alert(sos);
-        var pop = $("#action").val()
+        var pop = $("#op").val()
         alert(pop);
-        event.preventDefault()
 
+        var getlocation = prompt("tell your location:");
+        alert("will be delivered at" + " " + getlocation);
+        // }
     });
+    // $("#solution").show();
+    event.preventDefault();
+
 });
 
 
