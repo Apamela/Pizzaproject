@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="container"></div>
+
     <div class="card">
         <div class="main">
             <img src="/home/wecode/Documents/pizzaproject/image/lop.png">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="card" id="oo">
                     <img width="90%" src="/home/wecode/Documents/pizzaproject/image/tu.jpg">
-                    <div class="container">
+                    <div class="contain">
                         <h1>stuffed</h1>
                         <p>A stuffed pizza generally has much deeper topping density than any other type of pizza.<br>As
                             with deep-dish pizza, a deep layer of dough forms.
@@ -47,38 +47,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <form>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com" style="width:180%;">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">SIZE</label>
-                    <select class="form-control" id="exampleFormControlSelect1" style="width:180%;">
-                        <option> </option>
-                        <option>Large</option>
-                        <option>Medium</option>
-                        <option>Small</option>
 
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect2">PRICE</label>
-                    <select class="form-control" id="exampleFormControlSelect2" style="width:180%;">
-                        <option> </option>
-                        <option>200$</option>
-                        <option>600$</option>
-                        <option>400$</option>
-
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                        style="width:180%;"></textarea>
-                </div>
-            </form> -->
             <br>
 
         </div>
@@ -118,7 +87,76 @@
                 </div>
             </div>
         </div>
+        <form>
+
+            <div class="container">
+                <div class=colomn>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">SIZE</label>
+                        <select class="form-control" id="exampleFormControlSelect1" style="width:20%;">
+                            <option> </option>
+                            <option id="os">Large 800$</option>
+                            <option id="us"> Medium 600$</option>
+                            <option id="ss">Small 500$</option>
+
+                        </select>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="exampleFormControlSelect2">PRICE</label>
+                        <select class="form-control" id="exampleFormControlSelect2" style="width:20%;">
+                            <option> </option>
+                            <option id="pr">200$</option>
+                            <option id="ic">600$</option>
+                            <option id="ce">400$</option>
+
+                        </select> -->
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">crust</label>
+                        <select class="form-control" id="exampleFormControlSelect1" style="width:20%;">
+                            <option> </option>
+                            <option id="cr">crispy</option>
+                            <option id="st"> stuffed</option>
+                            <option id="tr">gluten-free</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">TOPPING</label>
+                        <select class="form-control" id="exampleFormControlSelect1" style="width:20%;">
+                            <option> </option>
+                            <option id="pi">onions</option>
+                            <option id="p1"> mashroom</option>
+                            <option id="p2">cheken</option>
+                            <option id="p3">Pineapple</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">quantity </label>
+                        <textarea class="form-control" id="pop" rows="3" style="width:20%;"></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pizza palace">
+                <div id="received*pizza*">
+                    <p>size of pizza:<em class="size of pizza"></em></p>
+                    <p>crust of pizza:<em class="crust of pizza"></em></p>
+                    <p>toppping of pizza:<em class="topping of pizza"></em></p>
+                    <p>price of pizza:<em class="price of pizza"></em></p>
+                    <p>quantity of pizza:<em class="quantity of pizza"></em></p>
+                </div>
+            </div>
+            <button id="sand"><span>Checkout</span></button>
     </div>
+    </div>
+    </form>
+    <ul id="done">
+        <li></li>
+    </ul>
+    </div>
+
 </body>
 
 </html>

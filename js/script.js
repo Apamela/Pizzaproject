@@ -58,78 +58,23 @@ $(document).ready(function () {
             var entertoppingofpizza = $('#p3').val();
             console.log(entertoppingofpizza)
         }
-        if ($('#pr').val()) {
-            var enterpriceofpizza = $('#pr').val();
-            console.log(enterpriceofpizza)
-        }
-        else if ($('#ic').val()) {
-            var enterpriceofpizza = $('#ic').val();
-            console.log(enterpriceofpizza)
-        }
-        if ($('#ce').val()) {
-            var enterpriceofpizza = $('#ce').val();
-            console.log(enterpriceofpizza)
-        }
+
         if ($('#pop').val()) {
             var enterquantityofpizza = $('#pop').val();
             console.log(enterquantityofpizza)
         }
-        // else if ($('#topping3').val()) {
-        //     var inputtedpizzatoppings = $('#p').val();
-        //     console.log(inputtedpizzatoppings)
-        // }
-        // else if ($('#topping4').val()) {
-        //     var inputtedpizzatoppings = $('#topping4').val();
-        //     console.log(inputtedpizzatoppings)
-        // }
-        // else if ($('#topping5').val()) {
 
-        //     var inputtedpizzatoppings = $('#topping5').val();
-        //     console.log(inputtedpizzatoppings)
-        // }
-
-        // else if ($('#topping6').val()) {
-        //     var inputtedpizzatoppings = $('#topping6').val();
-        //     console.log(inputtedpizzatoppings)
-        // }
-        // else if ($('#topping7').val()) {
-        //     var inputtedpizzatoppings = $('#topping7').val();
-        //     console.log(inputtedpizzatoppings)
-        // }
-        // else if ($('#topping8').val()) {
-        //     var inputtedpizzatoppings = $('#topping8').val();
-        //     console.log(inputtedpizzatoppings)
-        // }
-        // else if ($('#topping9').val()) {
-        //     var inputtedpizzatoppings = $('#topping9').val();
-        //     console.log(inputtedpizzatoppings)
-        // }
-
-        if ($('#hide3').val()) {
-            var inputtedpizzaquantity = $('#hide3').val();
-            console.log(inputtedpizzaquantity)
-        }
-
-        // if ($('#delivery1').val()) {
-        //     var inputtedpizzadelivery = $('#delivery1').val();
-        //     console.log(inputtedpizzadelivery)
-        // }
-        // if ($('#delivery2').val()) {
-        //     var inputtedpizzadelivery = $('#delivery2').val();
-        //     console.log(inputtedpizzadelivery)
-        // }
-
-        var newOrder = new Order(entersizeofpizza, entercrustofpizza, entertoppingofpizza, enterpriceofpizza,enterpriceofquantity)  ;
+        var newOrder = new Order(entersizeofpizza, entercrustofpizza, entertoppingofpizza, enterpriceofpizza, enterpriceofquantity);
         console.log(newOrder)
 
-        $('ul#orderone').append("<li><span>" + newOrder.allInformation() + "</span></li>");
-        if ($('#hide3').val() > 1) {
-            console.log()enterpriceofpizza
-        }
-        $("ul#contacts").append("<li><span class='contact'>" + newContact.firstName + "</span></li>");
-        $('ul#done').append("<li><span class='contact1'>" + newOrder.allInfo + "</span></li>");
+        // $('ul#done').append("<li><span>" + newOrder.allInformation() + "</span></li>");
+        // if ($('#pop').val() > 1) {
+        //     console.log()
 
-        $(".contact1").last().click(function () {
+        // $("ul#done").append("<li><span class='contact'>" + newsand.firstName + "</span></li>");
+        $('ul#done').append("<li><span " + newOrder.allInfo + "</span></li>");
+
+        $(".contact2").last().click(function () {
             $("#received*pizza*").show();
             $(".sizeofpizza").text(newOrder.sizeofpizza);
             $(".crustofpizza").text(newOrder.crustofpizza);
@@ -139,3 +84,5 @@ $(document).ready(function () {
         });
     });
 });
+
+
