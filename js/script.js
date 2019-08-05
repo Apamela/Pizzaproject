@@ -22,7 +22,8 @@ $(document).ready(function () {
         alert(lol);
         var sos = $('#adr').val()
         alert(sos);
-
+        var pop = $("#action").val()
+        alert(pop);
         event.preventDefault()
 
     });
