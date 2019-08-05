@@ -27,7 +27,12 @@ $(document).ready(function () {
 
         var getlocation = prompt("tell your location:");
         alert("will be delivered at" + " " + getlocation);
-        // }
+        $('.form-group').on('input', '.prc', function () {
+            var totalSum = 0;
+            $('.form-group .prc').each(function () {
+                var inputVal =
+ })
+        })
     });
     // $("#solution").show();
     event.preventDefault();
