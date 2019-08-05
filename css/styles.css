@@ -1,5 +1,5 @@
 .main{
-    background-image:url("image/back.jpg");
+    background-image:url("/home/wecode/Documents/pizzaproject/image/back.jpg");
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;
@@ -37,7 +37,7 @@
   body>.card{
       width:90%;
       height: 1600px;
-      background-image:url("image/stk.jpg");
+      background-image:url("/home/wecode/Documents/pizzaproject/image/stk.jpg");
       background-repeat: no-repeat;
       background-size: cover;
   }
