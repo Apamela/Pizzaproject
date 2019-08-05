@@ -28,7 +28,7 @@ $(document).ready(function () {
         console.log(mop + yop + lol + sos + pop);
         var getlocation = prompt("tell your location:");
         alert("will be delivered at" + " " + getlocation);
-        $("#result").text(mop + yop + lol + sos + pop);
+        $("#result").text(mop+yop+lol+sos+pop);
         // $('.form-group').on('select', function () {
         //     var totalSum = 0;
         //     $('.form-group').each(function () {
