@@ -20,5 +20,5 @@ no Bugs
 phone number:+250780365718
 Email:pamelab.desire@gmail.com
 ### License
-Copyright (c)2019 pamela
+
   
