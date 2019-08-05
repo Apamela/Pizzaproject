@@ -14,34 +14,44 @@ $(document).ready(function () {
 
     $('#project form').submit(function (event) {
 
-        var mop = $('#os').val()
+        var mop = parseInt($('#os').val())
         alert(mop);
-        var yop = $('#cr').val()
-        alert(yop);
-        var lol = $('#pi').val()
-        alert(lol);
-        var sos = $('#adr').val()
-        alert(sos);
-        var pop = $("#op").val()
-        alert(pop);
+        var yop = parseInt$('#cr').val()
 
+        alert(yop);
+        var lol = parseInt$('#pi').val()
+        alert(lol);
+        var sos = parseInt$('#adr').val()
+        alert(sos);
+        var pop = parseInt$("#op").val()
+        alert(pop);
+       
         var getlocation = prompt("tell your location:");
         alert("will be delivered at" + " " + getlocation);
-        $('.form-group').on('input', '.prc', function () {
+
+        $('.form-group').on('select', function () {
             var totalSum = 0;
-            $('.form-group .prc').each(function () {
-                var inputVal = $(this).val();
-                if ($.isNumeric(inputVal)) {
-                    totalSum += parseFloat(inputVal);
+            $('.form-group').each(function () {
+                var selectVal = $(this).val();
+                if ($.isString(selectVal)) {
+                    totalSum += parseFloat(selectVal);
                 }
 
 
             });
-            $('#result').val(totalSum);
+
         })
+        // var fol = parseInt(mop)
+        // var lop = parseInt(yop)
+        // var tol = parseInt(lol)
+        // var nam = parseInt(sos)
+        // var kell = parseInt(pop)
+        console.log(mop);
+        $('#result').val(totalSum);
+        event.preventDefault();
     });
     // $("#solution").show();
-    event.preventDefault();
+
 
 });
 
